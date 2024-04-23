@@ -1,0 +1,26 @@
+{
+  "name": "age-calculator-app-fem",
+  "version": "1.0.0",
+  "description": "This is a solution to the 'Age Calculator App' challenge on Frontend Mentor",
+  "main": "./index.html",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Ion Stici",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionStici/age-calculator-app-fem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ionStici/age-calculator-app-fem/issues"
+  },
+  "homepage": "https://github.com/ionStici/age-calculator-app-fem#readme",
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
