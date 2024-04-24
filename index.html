@@ -3,7 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <link rel="icon" type="image/png" href="./public/assets/fav.png" />
+    <meta
+      name="description"
+      content="This is a solution to the 'Age Calculator App' challenge on Frontend Mentor"
+    />
+    <title>Age Calculator App | Frontend Mentor Challenge</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/scripts.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="wrapper">
+        <form class="form">
+          <div class="form__inputs-wrapper">
+            <div class="form__input-box" data-type="day">
+              <label for="day" class="form__label">Day</label>
+              <input
+                type="text"
+                class="form__input"
+                id="day"
+                placeholder="DD"
+              />
+              <span class="input__message hidden"></span>
+            </div>
+            <div class="form__input-box" data-type="month">
+              <label for="month" class="form__label">Month</label>
+              <input
+                type="text"
+                class="form__input"
+                id="month"
+                placeholder="MM"
+              />
+              <span class="input__message hidden"></span>
+            </div>
+            <div class="form__input-box" data-type="year">
+              <label for="year" class="form__label">Year</label>
+              <input
+                type="text"
+                class="form__input"
+                id="year"
+                placeholder="YYYY"
+              />
+              <label for="" class="input__message hidden"></label>
+            </div>
+          </div>
+
+          <div class="form__btn-box">
+            <button class="form__btn" aria-label="See Results">
+              <img src="./public/assets/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+        </form>
+
+        <div class="output">
+          <p class="output__box">
+            <span class="output__number">--</span>
+            <span class="output__text">years</span>
+          </p>
+          <p class="output__box">
+            <span class="output__number">--</span>
+            <span class="output__text">months</span>
+          </p>
+          <p class="output__box">
+            <span class="output__number">--</span>
+            <span class="output__text">days</span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
