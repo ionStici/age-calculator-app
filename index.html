@@ -24,6 +24,10 @@
                 class="form__input"
                 id="day"
                 placeholder="DD"
+                minlength="1"
+                maxlength="2"
+                min="1"
+                max="31"
               />
               <span class="input__message hidden"></span>
             </div>
@@ -34,6 +38,10 @@
                 class="form__input"
                 id="month"
                 placeholder="MM"
+                minlength="1"
+                maxlength="2"
+                min="1"
+                max="12"
               />
               <span class="input__message hidden"></span>
             </div>
@@ -44,6 +52,10 @@
                 class="form__input"
                 id="year"
                 placeholder="YYYY"
+                minlength="4"
+                maxlength="4"
+                min="1900"
+                max="3000"
               />
               <span class="input__message hidden"></span>
             </div>
@@ -58,15 +70,15 @@
 
         <div class="output">
           <p class="output__box">
-            <span class="output__number">--</span>
+            <span class="output__number" data-type="years">--</span>
             <span class="output__text">years</span>
           </p>
           <p class="output__box">
-            <span class="output__number">--</span>
+            <span class="output__number" data-type="months">--</span>
             <span class="output__text">months</span>
           </p>
           <p class="output__box">
-            <span class="output__number">--</span>
+            <span class="output__number" data-type="days">--</span>
             <span class="output__text">days</span>
           </p>
         </div>
