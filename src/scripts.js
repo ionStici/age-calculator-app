@@ -16,6 +16,7 @@ const inputBoxes = document.querySelectorAll('.form__input-box');
 const inputs = document.querySelectorAll('.form__input');
 const form = document.querySelector('.form');
 const opBoxes = document.querySelectorAll('.output__box');
+const outputEls = document.querySelectorAll('.output__number');
 
 // Current Date
 const today = new Date();
@@ -127,5 +128,60 @@ form.addEventListener('submit', function (event) {
     monthsDiff += 12;
   }
 
-  console.log([yearsDiff, monthsDiff, daysDiff]);
+  // Display data on the UI | yearsDiff, monthsDiff, daysDiff
+  const duration = 1000; // milliseconds
+  const yearsStepTime = duration / yearsDiff;
+  const monthsStepTime = duration / monthsDiff;
+  const daysStepTime = duration / daysDiff;
+
+  outputEls.forEach((el, _, els) => {
+    el.textContent = 0;
+
+    if (el.dataset.type === 'years') {
+      el.textContent = el.textContent.padStart(2, '0');
+      if (+el.textContent === yearsDiff) return;
+
+      const yearsInterval = setInterval(() => {
+        el.textContent = +el.textContent + 1;
+        el.textContent = el.textContent.padStart(2, '0');
+
+        if (+el.textContent === yearsDiff) clearInterval(yearsInterval);
+      }, yearsStepTime);
+    }
+
+    if (el.dataset.type === 'months') {
+      el.textContent = el.textContent.padStart(2, '0');
+      if (+el.textContent === monthsDiff) return;
+
+      const monthsInterval = setInterval(() => {
+        el.textContent = +el.textContent + 1;
+        el.textContent = el.textContent.padStart(2, '0');
+
+        if (+el.textContent === monthsDiff) clearInterval(monthsInterval);
+      }, monthsStepTime);
+    }
+
+    if (el.dataset.type === 'days') {
+      el.textContent = el.textContent.padStart(2, '0');
+      if (+el.textContent === daysDiff) return;
+
+      const daysInterval = setInterval(() => {
+        el.textContent = +el.textContent + 1;
+        el.textContent = el.textContent.padStart(2, '0');
+
+        if (+el.textContent === daysDiff) {
+          clearInterval(daysInterval);
+
+          // extra animation at the end
+          els.forEach(el => {
+            setTimeout(() => el.classList.add('output__number--finish'), 150);
+            setTimeout(
+              () => el.classList.remove('output__number--finish'),
+              500
+            );
+          });
+        }
+      }, daysStepTime);
+    }
+  });
 });

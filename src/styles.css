@@ -205,16 +205,26 @@ main {
   font-size: 5.6rem;
   font-weight: 800;
   font-style: italic;
+  position: relative;
 }
 
 .output__number {
   margin-right: 0.8rem;
   color: var(--color-purple);
   white-space: nowrap;
+  text-align: center;
+  transition: color 0.3s cubic-bezier(0, 0, 1, 1),
+    transform 0.3s cubic-bezier(0, 0, 1, 1);
+  min-width: 7.75rem;
 }
 
 .output__text {
   color: var(--color-black);
+}
+
+.output__number--finish {
+  color: var(--color-red);
+  transform: scale(1.2);
 }
 
 /* Interactive States */
@@ -309,6 +319,10 @@ main {
   .output__box {
     font-size: 9rem;
   }
+
+  .output__number {
+    min-width: 12.5rem;
+  }
 }
 
 @media only screen and (min-width: 920px) {
@@ -318,6 +332,10 @@ main {
 
   .output__box {
     font-size: 10.4rem;
+  }
+
+  .output__number {
+    min-width: 14.4rem;
   }
 
   .input__message {
