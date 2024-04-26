@@ -10,6 +10,13 @@ The "Age Calculator" is a simple yet elegant web application designed to calcula
 
 The project is entirely written in HTML, CSS, and vanilla JavaScript, with no reliance on third-party libraries. This ensures lightweight pages and straightforward maintainability. Vite is used as the build tool to serve and bundle the project for production.
 
+## Deployment
+
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-O96DuKwvEm)
+- Live Site URL: [https://ionstici.github.io/age-calculator-app-fem/](https://ionstici.github.io/age-calculator-app-fem/)
+
+The application is hosted on GitHub Pages, and was deployed using the [gh-pages](https://www.npmjs.com/package/gh-pages) package.
+
 ## Features
 
 - Input fields for day, month, and year of birth.
