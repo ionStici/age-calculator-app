@@ -55,7 +55,7 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   // retrieve user input
-  const data = [...inputs].reduce((acc, el, i) => {
+  const data = [...inputs].reduce((acc, el) => {
     acc.push(el.value);
     return acc;
   }, []);
