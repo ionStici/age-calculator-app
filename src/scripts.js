@@ -15,7 +15,6 @@ const hidden = 'hidden';
 const inputBoxes = document.querySelectorAll('.form__input-box');
 const inputs = document.querySelectorAll('.form__input');
 const form = document.querySelector('.form');
-const opBoxes = document.querySelectorAll('.output__box');
 const outputEls = document.querySelectorAll('.output__number');
 
 // Current Date
@@ -169,19 +168,16 @@ form.addEventListener('submit', function (event) {
         el.textContent = +el.textContent + 1;
         el.textContent = el.textContent.padStart(2, '0');
 
-        if (+el.textContent === daysDiff) {
-          clearInterval(daysInterval);
-
-          // extra animation at the end
-          els.forEach(el => {
-            setTimeout(() => el.classList.add('output__number--finish'), 150);
-            setTimeout(
-              () => el.classList.remove('output__number--finish'),
-              500
-            );
-          });
-        }
+        if (+el.textContent === daysDiff) clearInterval(daysInterval);
       }, daysStepTime);
     }
+
+    // extra animation at the end
+    setTimeout(() => {
+      els.forEach(el => {
+        setTimeout(() => el.classList.add('output__number--finish'), 150);
+        setTimeout(() => el.classList.remove('output__number--finish'), 500);
+      });
+    }, duration + 50);
   });
 });

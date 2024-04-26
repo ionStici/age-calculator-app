@@ -2,42 +2,42 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-Italic.ttf') format('truetype');
+  src: url('/fonts/Poppins-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/Poppins-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
   font-weight: 800; /* ExtraBold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+  src: url('/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800; /* ExtraBold */
   font-style: italic;
 }
@@ -195,6 +195,7 @@ main {
 
 .form__btn img {
   width: 100%;
+  height: 100%;
   pointer-events: none;
 }
 
