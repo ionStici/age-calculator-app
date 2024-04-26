@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/fav.png" />
+    <meta
+      name="description"
+      content="This is a solution to the 'Age Calculator App' challenge on Frontend Mentor"
+    />
+    <title>Age Calculator App | Frontend Mentor Challenge</title>
+    <script type="module" crossorigin src="./assets/index-BOH4yZX5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CqGGjC8L.css">
+  </head>
+  <body>
+    <main>
+      <section class="wrapper">
+        <form class="form">
+          <div class="form__inputs-wrapper">
+            <div class="form__input-box" data-type="day">
+              <label for="day" class="form__label">Day</label>
+              <input
+                type="text"
+                class="form__input"
+                id="day"
+                placeholder="DD"
+                minlength="1"
+                maxlength="2"
+                min="1"
+                max="31"
+              />
+              <span class="input__message hidden"></span>
+            </div>
+            <div class="form__input-box" data-type="month">
+              <label for="month" class="form__label">Month</label>
+              <input
+                type="text"
+                class="form__input"
+                id="month"
+                placeholder="MM"
+                minlength="1"
+                maxlength="2"
+                min="1"
+                max="12"
+              />
+              <span class="input__message hidden"></span>
+            </div>
+            <div class="form__input-box" data-type="year">
+              <label for="year" class="form__label">Year</label>
+              <input
+                type="text"
+                class="form__input"
+                id="year"
+                placeholder="YYYY"
+                minlength="4"
+                maxlength="4"
+                min="1900"
+                max="3000"
+              />
+              <span class="input__message hidden"></span>
+            </div>
+          </div>
+
+          <div class="form__btn-box">
+            <button class="form__btn" aria-label="See Results">
+              <img src="./assets/icon-arrow.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </form>
+
+        <div class="output">
+          <p class="output__box">
+            <span class="output__number" data-type="years">--</span>
+            <span class="output__text">years</span>
+          </p>
+          <p class="output__box">
+            <span class="output__number" data-type="months">--</span>
+            <span class="output__text">months</span>
+          </p>
+          <p class="output__box">
+            <span class="output__number" data-type="days">--</span>
+            <span class="output__text">days</span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
