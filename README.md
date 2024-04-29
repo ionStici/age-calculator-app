@@ -13,9 +13,9 @@ The project is entirely written in HTML, CSS, and vanilla JavaScript, with no re
 ## Deployment
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-O96DuKwvEm)
-- Live Site URL: [https://ionstici.github.io/age-calculator-app-fem/](https://ionstici.github.io/age-calculator-app-fem/)
+- Live Site URL: [https://ionstici.dev/age-calculator-app-fem/](https://ionstici.dev/age-calculator-app-fem/)
 
-The application is hosted on GitHub Pages, and was deployed using the [gh-pages](https://www.npmjs.com/package/gh-pages) package.
+This application is hosted on GitHub Pages, and was deployed using the [gh-pages](https://www.npmjs.com/package/gh-pages) package.
 
 ## Features
 
@@ -68,9 +68,11 @@ The application consists of the following primary files:
 
 For any additional questions or support, please open an issue in the project's GitHub repository issue tracker.
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for how the repository handles contributions.
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
