@@ -245,6 +245,33 @@ main {
   display: none;
 }
 
+/* 404 page */
+
+.error {
+  max-width: 65rem;
+  border-radius: 1.6rem;
+  padding: 4.8rem 2.4rem;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.error h1 {
+  margin-bottom: 1.6rem;
+}
+
+.error p {
+  margin-bottom: 1.2rem;
+}
+
+.go-home,
+.go-home:link,
+.go-home:visited {
+  color: #219ebc;
+  font-size: 1.8rem;
+}
+
 /* max-width Media Queries */
 
 @media only screen and (max-width: 370px) {
@@ -326,6 +353,26 @@ main {
 
   .output__number {
     min-width: 12.5rem;
+  }
+
+  .error {
+    margin: 0 auto;
+  }
+
+  .error h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .error p {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .go-home,
+  .go-home:link,
+  .go-home:visited {
+    font-size: 2.4rem;
   }
 }
 
